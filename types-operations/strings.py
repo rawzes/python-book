@@ -14,3 +14,13 @@ print(''.join(L))  # Ztrawberry
 s = ''.join(L)
 s = s.replace('rr', 'rrr')
 print(s)
+line = 'aaa,bbb,ccc'
+print(line.split(',')) # разбить по разделителю строку
+print(line.upper())
+test_string = '''etst
+gdf
+rt
+\ttew'''
+print(test_string)
+print(line.encode("utf-8"))
+print(line.encode("utf-16"))
