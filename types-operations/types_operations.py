@@ -10,3 +10,4 @@ print(s[-1])
 print(s[0:3])
 print(s[:-1])
 print(s[0:len(s)])  #Spam
+print("test");
