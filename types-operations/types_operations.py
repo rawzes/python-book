@@ -14,3 +14,9 @@ print("test");
 print("test3");
 s2 = s + "some text" # s is not changed
 print(s2*5)
+
+print(s.find("pa"));  # find offset for substring in sting S
+print(s.find("pea")); # returns -1 if string is not found
+
+line = 'aaaa,bbb,cc'
+print(line.split(','))
