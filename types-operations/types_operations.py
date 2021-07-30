@@ -20,3 +20,16 @@ print(s.find("pea")); # returns -1 if string is not found
 
 line = 'aaaa,bbb,cc'
 print(line.split(','))
+print(line.upper())
+print(line.isalpha())
+
+# formatting
+a = 'a'
+b = 'b'
+
+print('some test for %s and for %s' % (a,b))
+print('some test for {0} and for {1}'.format(a,b))
+print('some test for {} and for {}'.format(a,b))
+print(dir())
+print(dir(a))
+print(help(a.replace))
