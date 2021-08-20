@@ -14,11 +14,25 @@ M = [[1, 2, 3],
 print(M)
 print(M[0])
 print(M[1][1])
-'''Списковые включения'''
-col2 = [row[1] for row in M]
+'''Списковые включения''' # list comprehension
+col2 = [row[1]+2 for row in M]
 print(col2)
 '''Отфильтровать нечетные элементы в списке'''
 print([r[0] for r in M if r[0] % 2 == 1])  # [1,7]
+diag = [M[i][i] for i in [0,1,2]]
+print(diag)
 '''Генерация списка элементов с помощью range'''
 list_range = list(range(1, 10, 2))
 print(list_range) #1,3,5,7,9
+
+L = [1,2,4,"5"]
+L.append("test") # add item to the end
+print(L)
+L.pop(1) # select item by offset
+print(L)
+M = ['bb', 'a', 'z']
+M.sort()
+print(M)
+M.reverse()
+print(M)
+
