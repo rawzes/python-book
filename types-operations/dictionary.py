@@ -22,7 +22,23 @@ print(rec1, type (rec1))
 emp3['jobs'].append('junitors') # extending list with new value
 print(emp3)
 
-emp3 = '' # all memory will be deleted automatically
+emp2 = '' # all memory will be deleted automatically
 print('f' in emp3) # checking if ley 'f' is present in emp3
 if not 'f' in emp3:
     print('error.... key is not found')
+
+value = emp3.get('f', 0)
+print(value)
+value = emp3['x'] if 'x' in emp3 else 0
+print(value)
+
+Ks = list(emp3.keys()) # get unsorted list of keys
+print(Ks)
+Ks.sort()
+print(Ks)
+
+for key in Ks:
+    print(key, "=>", emp3[key])
+
+for key in sorted(emp3):
+    print(key, "----> ", emp3[key])
