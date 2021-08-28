@@ -26,10 +26,7 @@ emp2 = '' # all memory will be deleted automatically
 print('f' in emp3) # checking if ley 'f' is present in emp3
 if not 'f' in emp3:
     print('error.... key is not found')
-<<<<<<< HEAD
     print('really!') # operators blocks have the same indent
-=======
-
 value = emp3.get('f', 0)
 print(value)
 value = emp3['x'] if 'x' in emp3 else 0
