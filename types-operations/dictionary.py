@@ -26,3 +26,4 @@ emp3 = '' # all memory will be deleted automatically
 print('f' in emp3) # checking if ley 'f' is present in emp3
 if not 'f' in emp3:
     print('error.... key is not found')
+    print('really!') # operators blocks have the same indent
