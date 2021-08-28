@@ -42,4 +42,3 @@ for key in Ks:
 
 for key in sorted(emp3):
     print(key, "----> ", emp3[key])
->>>>>>> 8c1250f86f3e6c1ef805e7a1ddba60f48cfa9a49
