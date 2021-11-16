@@ -56,7 +56,6 @@ for k in D.keys():
 for k in D:
     print(k)
 
-
 D = {'a': 1, 'b': 2, 'c': 3}
 K = D.keys()
 V = D.values()
@@ -74,8 +73,28 @@ Keys: ['b', 'c']
 Value: [2, 3]
 '''
 
-D = {'a': 1, 'b': 2, 'c': 3}
+D = {1: 'a', 2: 'b', 3: 'c'}
 print(D.keys() & D)
 print(D.keys() & {'b'})
 print(D.keys() & {'b': 1})  # the same
 print(D.keys() | {'b', 'c', 'd'})
+
+# Ks.sort()  # AttributeError: 'dict_keys' object has no attribute 'sort'
+Ks = D.keys()
+Ks = list(Ks)
+Ks.sort()
+print(Ks)
+for k in Ks:
+    print(k, D[k])
+
+# or use sorted()
+Ks = D.keys()
+for k in sorted(Ks):
+    print(k, D[k])
+
+# or the best variant
+for k in sorted(D):
+    print(k, D[k])
+
+print('c' in D)  # False
+print(1 in D)  # True
