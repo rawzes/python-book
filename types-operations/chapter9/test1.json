@@ -1,0 +1,11 @@
+{
+    "name": {
+        "first_name": "roma",
+        "last_name": "smith"
+    },
+    "job": [
+        "qa",
+        "dev"
+    ],
+    "salary": 490000
+}

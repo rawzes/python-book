@@ -16,4 +16,11 @@ print(open('test1.json').read())
 obj2 = json.load(open('test1.json'))
 print(obj2)
 
+#  with  - closes file  \ empty buffer automatically
+with open(r'd:\test.txt', 'w') as file:
+    file.write('some text')
+
+with open(r'd:\test.txt', 'r') as file:
+    for line in file:
+        print(line)
 
